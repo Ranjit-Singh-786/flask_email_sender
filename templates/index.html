@@ -7,7 +7,16 @@
 </head>
 <body>
     <form action="{{ url_for('send_email') }}" method="post">
-        <h2>click on button to send the email.</h2>
+        <h2>Welcome to you in Document Sender App.</h2>
+        <label for="inpt_path">Directory Path</label>
+        <input type="text" name="folder_path" id="inpt_path"><br>
+
+        <label for="subject">Subject</label>
+        <input type="text" name="subject" id="subject"><br>
+
+        <label for="content">Body</label><br>
+        <textarea name="body" id="content" cols="30" rows="10"></textarea><br>
+
         <button type="submit">send mail</button>
     </form>
 </body>
